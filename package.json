@@ -1,0 +1,36 @@
+{
+  "name": "react-native-webview-stream-chunks",
+  "version": "0.1.0",
+  "description": "Reusable preload script and event types for streaming large HTML/chunks into WebView",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint ./src --ext ts",
+    "lint:fix": "eslint ./src --ext ts --fix",
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "webview",
+    "preload",
+    "stream",
+    "tiddlywiki"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.39.0",
+    "eslint-config-tidgi": "^2.2.0",
+    "typescript": "^5.9.3"
+  }
+}
