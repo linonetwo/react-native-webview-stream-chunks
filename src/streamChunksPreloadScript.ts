@@ -227,7 +227,3 @@ export const createWebViewStreamChunksPreloadScript = (options: WebViewStreamPre
   const resolved: WebViewStreamResolvedOptions = { ...defaultOptions, ...options };
   return `(${webViewStreamReceiverIIFE.toString()})(${JSON.stringify(resolved)}, ${JSON.stringify(WebViewStreamEventTypes)});`;
 };
-
-export const getWebViewStreamChunksPreloadScript = (options?: WebViewStreamPreloadScriptOptions) => {
-  return createWebViewStreamChunksPreloadScript(options);
-};

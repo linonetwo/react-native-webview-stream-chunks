@@ -3,7 +3,7 @@ export { WebViewStreamSender } from './sender';
 export type { WebViewStreamTransport } from './sender';
 
 // Preload script generators
-export { createWebViewStreamChunksPreloadScript, getWebViewStreamChunksPreloadScript } from './streamChunksPreloadScript';
+export { createWebViewStreamChunksPreloadScript } from './streamChunksPreloadScript';
 export type { PayloadScriptInjectionOptions, WebViewStreamPreloadScriptOptions } from './streamChunksPreloadScript';
 
 // Low-level event protocol (advanced usage)

@@ -22,10 +22,10 @@ pnpm add react-native-webview-stream-chunks
 ### 1) Generate the preload script (receiver side)
 
 ```ts
-import { getWebViewStreamChunksPreloadScript } from 'react-native-webview-stream-chunks';
+import { createWebViewStreamChunksPreloadScript } from 'react-native-webview-stream-chunks';
 
-const preloadScript = getWebViewStreamChunksPreloadScript({
-  receiverReadyCallbackPath: 'myApp.onReady', // Optional
+const preloadScript = createWebViewStreamChunksPreloadScript({
+  receiverReadyCallbackPath: 'window.onReady', // Optional
 });
 ```
 
